@@ -1,0 +1,235 @@
+/*Main stylesheet for flight simulator*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#briefing{
+    position: fixed;
+    top:50%;
+    left:50%;
+    z-index: 100;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #d3d3d3;
+}
+#briefing button{
+    padding:7px;
+    background-color: #1e90ff;
+    border: none;
+    display: block;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    width: calc(auto + 30px);
+}
+#briefing h2{
+    text-align: center;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+}
+.warning{
+    font-family: 'Open Sans', sans-serif;
+    color:#ff0000;
+}
+.green{color:#008000;}
+.white{color:white}.black{color:black;};
+.stripped{
+    background-color: #00000000;
+    border:none;
+    padding: 0;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+}/*
+#gameCanvas{
+    display:block;
+    z-index: 0;
+    height: 500px;
+    width: 500px;
+    border: 1px solid grey;
+}*/
+#rocket{
+   background-image: url("../images/rocket_landed.png"); 
+    background-size: contain;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    
+    height: 50px;
+    width:30px;
+    z-index:200;
+   
+}#background{
+    overflow: hidden;
+    position: absolute;
+    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    height: 600px;
+    width: 600px;
+}
+#fuel{
+    z-index: 300;
+    position: absolute;
+    width: 5px;
+    height: 110px;
+    background-color: white;
+    
+    top: calc(50% - 50px);
+    left: calc(100% - 20px);
+    border: 1px solid black;
+}
+#planet1{
+    /* left:0;
+    top:0; */
+    height: 2000px;
+    width: 2000px;
+    
+    background-image: url("../images/planet1.svg");
+}
+#satellite{
+    background-image: url("../images/satellite.svg");
+    height: 500px;
+    width: 500px;
+   
+
+}
+#spaceship{
+    background-image: url("../images/spaceship.svg");
+    height: 500px;
+    width: 500px;
+}
+#otherplanet{
+    /* left:0;
+    top:0; */
+    height: 2000px;
+    width: 2000px;
+    
+    background-image: url("../images/otherplanet.svg");
+}
+#spider{
+    background-image: url("../images/spider.svg");
+    height: 800px;
+    width: 800px;
+    
+}
+#planet2{
+    /* left:0;
+    top:0; */
+    height: 2000px;
+    width: 2000px;
+   
+    background-image: url("../images/planet2.svg");
+}
+#tinyplanet{
+    /* left:425px;
+    top:275px; */
+    height:700px;
+    width:700px;
+    background-image: url("../images/tinyplanetreal.svg");
+}#maze{
+    background-image:url("../images/maze.svg");
+    height: 2000px;
+    width: 2000px;
+}
+#chinaplanet{
+    background-image:  url("../images/chinanew.svg");
+    height: 2000px;
+    width: 2000px;}
+    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship {
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index:100;
+        background-position: center;
+        position:absolute;
+    }
+#planet1, #tinyplanet {
+    transition: transform 0.5s;  /* Adjust the duration as needed */
+}
+.isFuel{
+    opacity:1;
+}
+.noFuel{opacity:0.5;}
+.rocket-landed{
+    background-image: url("../images/rocket_landed.png");
+}
+.rocket-flying-engine-off{
+    background-image: url("../images/rocket_flying_engine_off.png");
+   
+}
+.rocket-thrusting-forward{
+    background-image: url("../images/rocket_thrusting_forward");
+    
+}
+.rocket-thrusting-backward{
+    background-image: url("../images/rocket_thrusting_backward.png");
+   
+}
+.rocket-turn-left{
+    background-image: url("../images/rocket_turn_left.png");
+    
+}
+.rocket-turn-right{
+    background-image: url("../images/rocket_turn_right.png");
+   
+}
+#message{
+    z-index:300;
+    position: absolute;
+    bottom: 20px;
+    width:350px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid grey;
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+    left: calc(50% - 175px);
+    border: 2px solid #333;
+    border-bottom:3px solid #333;
+    font-weight: 600;
+}
+#map{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 400;
+    overflow: hidden;
+    background-color: grey;
+}
+.planet{
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+
+}
+#map-rocket{
+    background-image: url("../images/rocket_flying_engine_off.png");
+    background-size:contain;
+    width:20px;
+    height:40px;
+    position: absolute;
+    z-index: 475;
+    top:calc(50% - 20px);
+    left:calc(50% - 10px);
+}
+#close{
+    z-index:500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #00000000;
+    border: none;
+    font-size: 30px;
+}
+#mapbutton{top:0;right:0;
+}
+#homebutton, #mapbutton{
+    z-index:300;
+    border: none;
+    background-color: black;color:white;border: 2px solid white;position:absolute;
+}
+#homebutton{bottom:0;right:0;}
+#mapbutton:hover,#homebutton:hover{background-color: white;color:black;}
+#mapbutton:hover,#close:hover,#homebutton:hover{cursor:pointer;}
