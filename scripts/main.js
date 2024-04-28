@@ -37,6 +37,7 @@ $(document).ready(function(){
     const $mapspaceship = $("#map-spaceship");
     const $mapmaze = $("#map-maze");
     const $homebutton = $("#homebutton");
+    const $xydisplay = $("#xydisplay");
     function message(content){
         $message.css("display", "block");
         $message.html(content);
@@ -48,9 +49,11 @@ message("USE THE ARROW KEYS TO CONTROL DIRECTION AND THRUST. GOOD LUCK, PILOT!")
 
     let x = 10550; 
     let y =8000; 
+    
     let oldX = x;
     let oldY = y;
     let rotation = 0;
+    $xydisplay.innerHTML = "X: " +x+"<br>Y: " + y+"<br>rotation" + rotation;
     let oldRotation =rotation;
     $homebutton.click(function(){
         x= oldX;

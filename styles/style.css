@@ -233,3 +233,4 @@ h2{
 #homebutton{bottom:0;right:0;}
 #mapbutton:hover,#homebutton:hover{background-color: white;color:black;}
 #mapbutton:hover,#close:hover,#homebutton:hover{cursor:pointer;}
+#xydisplay{font-size:25px; font-family: 'Open Sans', sans-serif;}
