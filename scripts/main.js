@@ -210,7 +210,7 @@ $close.click(closeMap);
 
     function animate() {
         for (let planet of planets) {
-            if (isColliding($rocket, $(planet.id))) {
+            /* if (isColliding($rocket, $(planet.id))) {
                 // Calculate the distance between the rocket and the planet's center
                 let distanceX = x - planet.x;
                 let distanceY = y - planet.y;
@@ -252,7 +252,7 @@ $close.click(closeMap);
                         speed *= friction;
                     }
                 }
-            }
+            } */
         }
         let nearestPlanet = planets[0];
         let minDistance = Infinity;
@@ -265,14 +265,15 @@ $close.click(closeMap);
         
             // Calculate the angle between the rocket and the planet
             let angle = Math.atan2(y - planet.y, x - planet.x) * 180 / Math.PI;
+            if (isColliding($rocket, $(planet.id))) {
         if (y<planet.y){
             if (x>oldX){
                 $(planet.id).css({
-                    "rotate": - angle*4 + "deg"
+                    "rotate": - angle + "deg"
                 });
             } else if (x<oldX){
                 $(planet.id).css({
-                    "rotate": + angle*4 + "deg"
+                    "rotate": + angle + "deg"
                 });
             }else{
                 $(planet.id).css({
@@ -282,11 +283,11 @@ $close.click(closeMap);
         } else if (y>planet.y){
             if (x>oldX){
                 $(planet.id).css({
-                    "rotate": - angle*4 + "deg"
+                    "rotate": - angle + "deg"
                 });
             } else if (x<oldX){
                 $(planet.id).css({
-                    "rotate": + angle*4 + "deg"
+                    "rotate": + angle + "deg"
                 });
             }else{
                 $(planet.id).css({
@@ -294,7 +295,7 @@ $close.click(closeMap);
                 });
             }
         }
-            
+    } 
             
         }
 let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
