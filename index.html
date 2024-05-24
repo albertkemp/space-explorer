@@ -56,7 +56,20 @@
         <div id="maze"></div>
         <div id="message"></div>
     </div>
+    <h2>Notes about the game:</h2>
+    <p>The planets are all below the starting planet. You can also check on the map (upper right corner).</p>
+    <p>up and down controls forward and backward. left and right controls turning left and right</p>
+    <p>The home button teleports you back to the starting place.</p>
+    <p>There isn't really a goal in the game, but you can have fun looking through my illustrations</p>
+    <p>Also, there may be some mention of<button onclick="showSpoiler()">Show spoiler</button></p>
+    <p id="spoiler" style="background-color:black;">rabbit stew</p>
     <p id="xydisplay"></p>
+    <script>
+        function showSpoiler(){
+            var spoiler = document.getElementById("spoiler");
+            spoiler.style.backgroundColor="none";
+        }
+    </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="scripts/main.js"></script>
         <script>
