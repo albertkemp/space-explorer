@@ -272,11 +272,11 @@ $close.click(closeMap);
         if (y<planet.y){
             if (x>oldX){
                 $(planet.id).css({
-                    "rotate": - angle + "deg"
+                    "rotate": - angle*4 + "deg"
                 });
             } else if (x<oldX){
                 $(planet.id).css({
-                    "rotate": + angle + "deg"
+                    "rotate": + angle*4 + "deg"
                 });
             }else{
                 $(planet.id).css({
@@ -286,11 +286,11 @@ $close.click(closeMap);
         } else if (y>planet.y){
             if (x>oldX){
                 $(planet.id).css({
-                    "rotate": - angle + "deg"
+                    "rotate": - angle*4 + "deg"
                 });
             } else if (x<oldX){
                 $(planet.id).css({
-                    "rotate": + angle + "deg"
+                    "rotate": + angle*4 + "deg"
                 });
             }else{
                 $(planet.id).css({
