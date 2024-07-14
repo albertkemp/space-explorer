@@ -415,9 +415,9 @@ let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
         }
 
         requestAnimationFrame(animate);
-    }
 
-    animate();
+
+animate();
 });
 
 console.log("hi")
