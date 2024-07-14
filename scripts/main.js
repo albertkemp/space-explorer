@@ -150,7 +150,7 @@ $close.click(closeMap);
         "left": (planets[9].x/100) + "px",
         "top": (planets[9].y/100) + "px",
         "height": (planets[9].diameter/100) + "px",
-        "width": (planets[9].diameter/100) + "px";
+        "width": (planets[9].diameter/100) + "px",
     })
 
     $mapmaze.css({
