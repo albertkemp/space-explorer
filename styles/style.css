@@ -97,6 +97,16 @@ h2{
     height: 500px;
     width: 500px;
 }
+#airportplanet{
+    background-image: url("../images/airportplanet.svg");
+    height: 2500px;
+    width: 2500px;
+}
+#cityplanet{
+    background-image: url("../images/cityplanet.svg");
+    height: 2500px;
+    width: 2500px;
+}
 #farmplanet{
     background-image: url("../images/farmplanet.svg");
     height: 1700px;

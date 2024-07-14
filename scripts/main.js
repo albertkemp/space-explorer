@@ -42,6 +42,9 @@ $(document).ready(function(){
     const $maptunnelplanet = $("#map-tunnelplanet");
     const $mapdesertplanet = $("#map-desertplanet");
     const $mapfarmplanet = $("#map-farmplanet");
+    const $mapcityplanet = $("#map-cityplanet");
+    const $mapairportplanet = $("#map-airportplanet");
+
     function message(content){
         $message.css("display", "block");
         $message.html(content);
@@ -123,6 +126,8 @@ $close.click(closeMap);
         {id: "#tunnelplanet", x: 17000, y: 4000, visible: true, gravity: 0.3, diameter: 2500},
         {id: "#desertplanet", x: 4000, y: 7000, visible: true, gravity: 0.2, diameter: 1700},
         {id: "#farmplanet", x: 13000, y: 4000, visible: true, gravity: 0.2, diameter: 1800},
+        {id: "#cityplanet", x: 9000, y: 4000, visible: true, gravity: 0.3, diameter: 2500},
+        {id: "#airportplanet", x: 1000, y: 5000, visible: true, gravity: 0, diameter: 2500},
     ]; 
     
     let spinplanets = [
@@ -153,6 +158,18 @@ $close.click(closeMap);
         // Check if the distance is less than the sum of the radii
         return distance < (elem1Diameter / 2 + elem2Diameter / 2);
     }
+    $mapairportplanet.css({
+        "left": (planets[14].x/100) + "px",
+        "top": (planets[14].y/100) + "px",
+        "height": (planets[14].diameter/100) + "px",
+        "width": (planets[14].diameter/100) + "px",
+    });
+    $mapcityplanet.css({
+        "left": (planets[13].x/100) + "px",
+        "top": (planets[13].y/100) + "px",
+        "height": (planets[13].diameter/100) + "px",
+        "width": (planets[13].diameter/100) + "px",
+    });
     $mapfarmplanet.css({
         "left": (planets[12].x/100) + "px",
         "top": (planets[12].y/100) + "px",
