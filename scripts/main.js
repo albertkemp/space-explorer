@@ -52,7 +52,7 @@ $(document).ready(function(){
             $message.css("display", "none");
         },4000);
     }
-message("USE THE ARROW KEYS TO CONTROL DIRECTION AND THRUST. GOOD LUCK, PILOT!");
+message("USE THE ARROW KEYS AND GOOD LUCK, PILOT!");
 
     let x = 10550; 
     let y =8000; 
