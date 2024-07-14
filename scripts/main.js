@@ -287,7 +287,7 @@ $close.click(closeMap);
                 $(planet.id).css({
                     "rotate": + angle*4 + "deg"
                 });
-            }else{
+            }else
                 $(planet.id).css({
                     "rotate": 0 + "deg"
                 });
@@ -313,11 +313,11 @@ $close.click(closeMap);
 let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
         
         if (keys[37]) {
-            $rocket.removeClass.addClass("rocket-turn-left");
+            $rocket.toggleClass("rocket-turn-left");
             rotation -= rotationSpeed;
         }
         if (keys[38]) {
-            $rocket.removeClass.addClass("rocket-thrusting-forward");
+            $rocket.toggleClass("rocket-thrusting-forward");
             fuel -= fuelBurnSpeed;
             if (fuel < 0) { fuel = 0; }
           
