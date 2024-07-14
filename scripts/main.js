@@ -268,13 +268,13 @@ $close.click(closeMap);
         }
         let nearestPlanet = planets[0];
         let minDistance = Infinity;
-/*
+
         for (let planet of spinplanets) {
             $(planet.id).css({
                 "left": (planet.x - x + 550) + "px", 
                 "top": (planet.y - y + 400) + "px" 
             });
-        */
+        
             // Calculate the angle between the rocket and the planet
             let angle = Math.atan2(y - planet.y, x - planet.x) * 180 / Math.PI;
             if (isColliding($rocket, $(planet.id))) {
