@@ -97,6 +97,21 @@ h2{
     height: 500px;
     width: 500px;
 }
+#farmplanet{
+    background-image: url("../images/farmplanet.svg");
+    height: 1700px;
+    width: 1700px;
+}
+#desertplanet{
+    background-image: url("../images/desertplanet.svg");
+    height: 1700px;
+    width: 1700px;
+}
+#tunnelplanet{
+    background-image: url("../images/tunnelplanet.svg");
+    height: 2500px;
+    width: 2500px;
+}
 #holeplanet{
     background-image: url("../images/holeplanet.svg");
     height: 2000px;
@@ -139,7 +154,7 @@ h2{
     background-image:  url("../images/chinanew.svg");
     height: 2000px;
     width: 2000px;}
-    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship, #holeplanet {
+    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship, #holeplanet, #tunnelplanet, #desertplanet, #farmplanet {
         background-size: contain;
         background-repeat: no-repeat;
         z-index:100;
@@ -201,10 +216,11 @@ h2{
     height: 200px;
     z-index: 400;
     overflow: hidden;
-    background-color: grey;
+    background-color: black;
+    border:2px solid white;
 }
 .planet{
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
     position:absolute;
 
