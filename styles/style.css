@@ -216,11 +216,11 @@ h2{
     height: 200px;
     z-index: 400;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     border:2px solid white;
 }
 .planet{
-    background-color: white;
+    background-color: black;
     border-radius: 50%;
     position:absolute;
 
@@ -243,6 +243,7 @@ h2{
     background-color: #00000000;
     border: none;
     font-size: 30px;
+    color:black;
 }
 #mapbutton{top:0;right:0;
 }
