@@ -226,7 +226,7 @@ h2{
     height: 200px;
     z-index: 400;
     overflow: hidden;
-    background-color: white;
+    background-color: #a0a0a0;
     border:2px solid white;
 }
 .planet{
