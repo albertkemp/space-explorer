@@ -146,6 +146,12 @@ $close.click(closeMap);
         // Check if the distance is less than the sum of the radii
         return distance < (elem1Diameter / 2 + elem2Diameter / 2);
     }
+    $mapholeplanet.css({
+        "left": (planets[9].x/100) + "px",
+        "top": (planets[9].y/100) + "px",
+        "height": (planets[9].diameter/100) + "px",
+        "width": (planets[9].diameter/100) + "px";
+    })
 
     $mapmaze.css({
         "left": (planets[8].x/100) + "px",

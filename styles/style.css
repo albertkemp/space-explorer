@@ -97,6 +97,11 @@ h2{
     height: 500px;
     width: 500px;
 }
+#holeplanet{
+    background-image: url("../images/holeplanet.svg");
+    height: 2000px;
+    width: 2000px;
+}
 #otherplanet{
     /* left:0;
     top:0; */
