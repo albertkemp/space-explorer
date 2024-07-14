@@ -439,6 +439,18 @@ let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
             y=0;
         } else if (y>=20000){
             y=20000;
+        } else if (x<0&&y<0){
+            x=0;
+            y=0;
+        } else if(x>20000&&y>20000){
+            x=20000;
+            y=20000;
+        } else if (x<0&&y>20000){
+            x=0;
+            y=20000;
+        } else if (x>20000&&y<0){
+            x=20000;
+            y=0;
         }
 
         requestAnimationFrame(animate);
