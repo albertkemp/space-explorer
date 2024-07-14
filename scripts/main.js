@@ -109,7 +109,7 @@ $close.click(closeMap);
     let planets = [
         {id: "#planet1", x: 9000, y: 8800, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#tinyplanet", x: 10000, y: 7760, visible: true, gravity: 0.1, diameter: 250},
-        {id: "#chinaplanet", x: 4000, y: 6500, visible: true, gravity:0.1, diameter: 2000},
+        {id: "#chinaplanet", x: 7000, y: 6500, visible: true, gravity:0.1, diameter: 2000},
         {id: "#planet2", x: 7000, y: 9000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#otherplanet", x: 11500, y: 9000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#spider", x: 11000, y: 10300, visible: true, gravity: 0.2, diameter: 800},
