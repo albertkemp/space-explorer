@@ -139,7 +139,7 @@ h2{
     background-image:  url("../images/chinanew.svg");
     height: 2000px;
     width: 2000px;}
-    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship {
+    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship, #holeplanet {
         background-size: contain;
         background-repeat: no-repeat;
         z-index:100;
