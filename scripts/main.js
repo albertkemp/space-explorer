@@ -39,6 +39,9 @@ $(document).ready(function(){
     const $homebutton = $("#homebutton");
     const $xydisplay = $("#xydisplay");
     const $mapholeplanet = $("#map-holeplanet");
+    const $maptunnelplanet = $("#map-tunnelplanet");
+    const $mapdesertplanet = $("#map-desertplanet");
+    const $mapfarmplanet = $("#map-farmplanet");
     function message(content){
         $message.css("display", "block");
         $message.html(content);
@@ -117,6 +120,9 @@ $close.click(closeMap);
         {id: "#spaceship", x: 110000, y: 8000, visible: true, gravity: 0.2, diameter: 250},
         {id: "#maze", x: 10000, y: 10700, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#holeplanet", x: 13000, y: 7000, visible: true, gravity: 0.2, diameter: 2000},
+        {id: "#tunnelplanet", x: 17000, y: 4000, visible: true, gravity: 0.3, diameter: 2500},
+        {id: "#desertplanet", x: 4000, y: 7000, visible: true, gravity: 0.2, diameter: 1700},
+        {id: "#farmplanet", x: 13000, y: 4000, visible: true, gravity: 0.2, diameter: 1800},
     ]; 
     
     let spinplanets = [
@@ -147,12 +153,30 @@ $close.click(closeMap);
         // Check if the distance is less than the sum of the radii
         return distance < (elem1Diameter / 2 + elem2Diameter / 2);
     }
+    $mapfarmplanet.css({
+        "left": (planets[12].x/100) + "px",
+        "top": (planets[12].y/100) + "px",
+        "height": (planets[12].diameter/100) + "px",
+        "width": (planets[12].diameter/100) + "px",
+    });
+    $mapdesertplanet.css({
+        "left": (planets[11].x/100) + "px",
+        "top": (planets[11].y/100) + "px",
+        "height": (planets[11].diameter/100) + "px",
+        "width": (planets[11].diameter/100) + "px",
+    });
+    $maptunnelplanet.css({
+        "left": (planets[10].x/100) + "px",
+        "top": (planets[10].y/100) + "px",
+        "height": (planets[10].diameter/100) + "px",
+        "width": (planets[10].diameter/100) + "px",
+    });
     $mapholeplanet.css({
         "left": (planets[9].x/100) + "px",
         "top": (planets[9].y/100) + "px",
         "height": (planets[9].diameter/100) + "px",
         "width": (planets[9].diameter/100) + "px",
-    })
+    });
 
     $mapmaze.css({
         "left": (planets[8].x/100) + "px",
