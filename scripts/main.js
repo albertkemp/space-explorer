@@ -293,7 +293,7 @@ $close.click(closeMap);
         let nearestPlanet = planets[0];
         let minDistance = Infinity;
 
- for (let planet of spinplanets) {
+        for (let planet of spinplanets) {
             $(planet.id).css({
                 "left": (planet.x - x + 550) + "px", 
                 "top": (planet.y - y + 400) + "px" 
@@ -311,7 +311,7 @@ $close.click(closeMap);
                 $(planet.id).css({
                     "rotate": + angle*4 + "deg"
                 });
-            }else
+            }else{
                 $(planet.id).css({
                     "rotate": 0 + "deg"
                 });
@@ -334,7 +334,7 @@ $close.click(closeMap);
     } 
             
         }
-//let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
+let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
         
         if (keys[37]) {
             $rocket.toggleClass("rocket-turn-left");
@@ -415,9 +415,9 @@ $close.click(closeMap);
         }
 
         requestAnimationFrame(animate);
+    }
 
-
-animate();
+    animate();
 });
 
-console.log("hi")
+console.log("hi");
