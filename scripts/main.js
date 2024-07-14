@@ -116,7 +116,7 @@ $close.click(closeMap);
         {id: "#satellite", x: 110000, y: 9000, visible: true, gravity: 0.2, diameter: 250},
         {id: "#spaceship", x: 110000, y: 8000, visible: true, gravity: 0.2, diameter: 250},
         {id: "#maze", x: 10000, y: 10700, visible: true, gravity: 0.2, diameter: 2000},
-        {id: "#holeplanet", x: 1200, y: 7000, visible: true, gravity: 0.2, diameter: 2000},
+        {id: "#holeplanet", x: 13000, y: 7000, visible: true, gravity: 0.2, diameter: 2000},
     ]; 
     let spinplanets = [
         {id: "#planet1", x: planets[0].x, y: planets[0].y, visible: planets[0].visible, gravity: planets[0].gravity, diameter: planets[0].diameter},
