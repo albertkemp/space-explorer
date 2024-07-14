@@ -95,11 +95,11 @@ message("USE THE ARROW KEYS AND GOOD LUCK, PILOT!");
     });
     
    function isPointingAt($rocket, $planet) {
-    // Calculate the angle between the rocket and the planet
+    
     let angle = Math.atan2($planet.offset().top - $rocket.offset().top, $planet.offset().left - $rocket.offset().left) * 180 / Math.PI;
 
-    // Check if the rocket is pointed towards the planet within a range of +/- 20 degrees
-    return Math.abs(rotation - angle) < 20;  // Adjust the threshold as needed
+    
+    return Math.abs(rotation - angle) < 20;
 }
 function showMap(){
     $map.css("display", "block");
@@ -137,6 +137,23 @@ $close.click(closeMap);
         {id: "#planet2",x: planets[3].x, y: planets[3].y, visible: planets[3].visible, gravity: planets[3].gravity, diameter: planets[3].diameter},
         {id: "#otherplanet", x: planets[4].x, y: planets[4].y, visible: planets[4].visible, gravity: planets[4].gravity, diameter: planets[4].diameter},
     ];
+    let collisionObjects = [];
+    collisionObjects.push({ x: 100, y: 200, width: 50, height: 50 });
+    function checkForCollision(rocketX, rocketY, rocketWidth, rocketHeight) {
+        for (let obj of collisionObjects) {
+            if (rocketX < obj.x + obj.width &&
+                rocketX + rocketWidth > obj.x &&
+                rocketY < obj.y + obj.height &&
+                rocketY + rocketHeight > obj.y) {
+                // Collision detected
+                return true;
+            }
+        }
+        return false; // No collision
+    }
+    if (checkForCollision($rocket.position().left, $rocket.position().top, rocketWidth, rocketHeight)) {
+        message("YOU FOUND A RADIOACTIVE POTATO");
+    }
     function isColliding($elem1, $elem2) {
         var rect1 = $elem1[0].getBoundingClientRect();
         var rect2 = $elem2[0].getBoundingClientRect();
