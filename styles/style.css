@@ -212,8 +212,8 @@ h2{
 #map-rocket{
     background-image: url("../images/rocket_flying_engine_off.png");
     background-size:contain;
-    width:20px;
-    height:40px;
+    width:5px;
+    height:10px;
     position: absolute;
     z-index: 475;
     top:calc(50% - 20px);
