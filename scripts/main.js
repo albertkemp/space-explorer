@@ -109,7 +109,7 @@ $close.click(closeMap);
     let planets = [
         {id: "#planet1", x: 9000, y: 8800, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#tinyplanet", x: 10000, y: 7760, visible: true, gravity: 0.1, diameter: 250},
-        {id: "#chinaplanet", x: 7000, y: 6500, visible: true, gravity:0.1, diameter: 2000},
+        {id: "#chinaplanet", x: 4000, y: 6500, visible: true, gravity:0.1, diameter: 2000},
         {id: "#planet2", x: 7000, y: 9000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#otherplanet", x: 11500, y: 9000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#spider", x: 11000, y: 10300, visible: true, gravity: 0.2, diameter: 800},
@@ -118,12 +118,13 @@ $close.click(closeMap);
         {id: "#maze", x: 10000, y: 10700, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#holeplanet", x: 13000, y: 7000, visible: true, gravity: 0.2, diameter: 2000},
     ]; 
+    /*
     let spinplanets = [
         {id: "#planet1", x: planets[0].x, y: planets[0].y, visible: planets[0].visible, gravity: planets[0].gravity, diameter: planets[0].diameter},
         {id: "#chinaplanet", x: planets[2].x, y: planets[2].y, visible: planets[2].visible, gravity: planets[2].gravity, diameter: planets[2].diameter},
         {id: "#planet2",x: planets[3].x, y: planets[3].y, visible: planets[3].visible, gravity: planets[3].gravity, diameter: planets[3].diameter},
         {id: "#otherplanet", x: planets[4].x, y: planets[4].y, visible: planets[4].visible, gravity: planets[4].gravity, diameter: planets[4].diameter},
-    ];
+    ];*/
     function isColliding($elem1, $elem2) {
         var rect1 = $elem1[0].getBoundingClientRect();
         var rect2 = $elem2[0].getBoundingClientRect();
@@ -267,17 +268,17 @@ $close.click(closeMap);
         }
         let nearestPlanet = planets[0];
         let minDistance = Infinity;
-
+/*
         for (let planet of spinplanets) {
             $(planet.id).css({
                 "left": (planet.x - x + 550) + "px", 
                 "top": (planet.y - y + 400) + "px" 
             });
-        
+        */
             // Calculate the angle between the rocket and the planet
             let angle = Math.atan2(y - planet.y, x - planet.x) * 180 / Math.PI;
             if (isColliding($rocket, $(planet.id))) {
-        if (y<planet.y){
+        /*if (y<planet.y){
             if (x>oldX){
                 $(planet.id).css({
                     "rotate": - angle*4 + "deg"
@@ -306,17 +307,17 @@ $close.click(closeMap);
                 });
             }
         }
-    } 
+    } */
             
         }
 let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
         
         if (keys[37]) {
-            $rocket.toggleClass("rocket-turn-left");
+            $rocket.removeClass.addClass("rocket-turn-left");
             rotation -= rotationSpeed;
         }
         if (keys[38]) {
-            $rocket.toggleClass("rocket-thrusting-forward");
+            $rocket.removeClass.addClass("rocket-thrusting-forward");
             fuel -= fuelBurnSpeed;
             if (fuel < 0) { fuel = 0; }
           
