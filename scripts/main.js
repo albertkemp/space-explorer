@@ -334,7 +334,7 @@ $close.click(closeMap);
     } 
             
         }
-let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
+//let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
         
         if (keys[37]) {
             $rocket.toggleClass("rocket-turn-left");
