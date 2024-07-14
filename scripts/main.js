@@ -131,13 +131,13 @@ $close.click(closeMap);
         {id: "#universeedge", x: -2000, y: -2000, visible: true, gravity: 0, diameter: 24000},
         {id: "#radiopotato", x: 100, y: 200, visible: true, gravity: 0, diameter: 50},
     ]; 
-    
+    /*
     let spinplanets = [
         {id: "#planet1", x: planets[0].x, y: planets[0].y, visible: planets[0].visible, gravity: planets[0].gravity, diameter: planets[0].diameter},
         {id: "#chinaplanet", x: planets[2].x, y: planets[2].y, visible: planets[2].visible, gravity: planets[2].gravity, diameter: planets[2].diameter},
         {id: "#planet2",x: planets[3].x, y: planets[3].y, visible: planets[3].visible, gravity: planets[3].gravity, diameter: planets[3].diameter},
         {id: "#otherplanet", x: planets[4].x, y: planets[4].y, visible: planets[4].visible, gravity: planets[4].gravity, diameter: planets[4].diameter},
-    ];
+    ];*/
     let collisionObjects = [];
     collisionObjects.push({ x: 100, y: 200, width: 50, height: 50 });
     function checkForCollision(rocketX, rocketY, rocketWidth, rocketHeight) {
