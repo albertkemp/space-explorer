@@ -154,6 +154,7 @@ $close.click(closeMap);
     }
     if (checkForCollision($rocket.position().left, $rocket.position().top, rocketWidth, rocketHeight)) {
         message("YOU FOUND A RADIOACTIVE POTATO");
+        console.log("YOU FOUND A RADIOACTIVE POTATO");
     }
     function isColliding($elem1, $elem2) {
         var rect1 = $elem1[0].getBoundingClientRect();
