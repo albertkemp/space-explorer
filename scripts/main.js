@@ -120,8 +120,8 @@ $close.click(closeMap);
         {id: "#planet2", x: 7000, y: 9000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#otherplanet", x: 11500, y: 9000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#spider", x: 11000, y: 10300, visible: true, gravity: 0.2, diameter: 800},
-        {id: "#satellite", x: 110000, y: 9000, visible: true, gravity: 0.2, diameter: 250},
-        {id: "#spaceship", x: 110000, y: 8000, visible: true, gravity: 0.2, diameter: 250},
+        {id: "#satellite", x: 110000, y: 9000, visible: true, gravity: 0.2, diameter: 500},
+        {id: "#spaceship", x: 110000, y: 8000, visible: true, gravity: 0.2, diameter: 500},
         {id: "#maze", x: 10000, y: 10700, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#holeplanet", x: 13000, y: 7000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#tunnelplanet", x: 17000, y: 4000, visible: true, gravity: 0.3, diameter: 2500},
@@ -267,17 +267,17 @@ $close.click(closeMap);
         "width": (planets[5].diameter/100) + "px",
     });
     $mapsatellite.css({
-        "left": (planets[6].x/100) + "px",
-        "top": (planets[6].y/100) + "px",
-        "height": (planets[6].diameter/100) + "px",
-        "width": (planets[6].diameter/100) + "px",
-
-    });
-    $mapspaceship.css({
         "left": (planets[7].x/100) + "px",
         "top": (planets[7].y/100) + "px",
         "height": (planets[7].diameter/100) + "px",
         "width": (planets[7].diameter/100) + "px",
+
+    });
+    $mapspaceship.css({
+        "left": (planets[8].x/100) + "px",
+        "top": (planets[8].y/100) + "px",
+        "height": (planets[8].diameter/100) + "px",
+        "width": (planets[8].diameter/100) + "px",
     });
     $(document).on("keydown", function(event){
         event.preventDefault();
