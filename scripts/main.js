@@ -44,6 +44,7 @@ $(document).ready(function(){
     const $mapfarmplanet = $("#map-farmplanet");
     const $mapcityplanet = $("#map-cityplanet");
     const $mapairportplanet = $("#map-airportplanet");
+    const $mapspiralplanet = $("#map-spiralplanet");
 
     function message(content){
         $message.css("display", "block");
@@ -131,6 +132,7 @@ $close.click(closeMap);
         {id: "#universeedge", x: -2000, y: -2000, visible: true, gravity: 0, diameter: 23500},
         {id: "#radiopotato", x: 100, y: 200, visible: true, gravity: 0, diameter: 50},
         {id: "#hugeplanet", x: 0, y: -5000, visible: true, gravity: 0.4, diameter: 5000},
+        {id: "#spiralplanet", x: 10000, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
     ]; 
     
     let spinplanets = [
@@ -179,6 +181,12 @@ $close.click(closeMap);
         // Check if the distance is less than the sum of the radii
         return distance < (elem1Diameter / 2 + elem2Diameter / 2);
     }
+    $mapspiralplanet.css({
+        "left": (planets[15].x/100) + "px",
+        "top": (planets[15].y/100) + "px",
+        "height": (planets[15].diameter/100) + "px",
+        "width": (planets[15].diameter/100) + "px",
+    });
     $mapairportplanet.css({
         "left": (planets[14].x/100) + "px",
         "top": (planets[14].y/100) + "px",

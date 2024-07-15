@@ -113,6 +113,11 @@ h2{
     height: 5000px;
     width: 5000px;
 }
+#spiralplanet{
+    background-image: url("../images/spiralplanet.svg");
+    height: 2500px;
+    width: 2500px;
+}
 #airportplanet{
     background-image: url("../images/airportplanet.svg");
     height: 2500px;
@@ -180,7 +185,7 @@ h2{
     background-image:  url("../images/chinanew.svg");
     height: 2000px;
     width: 2000px;}
-    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship, #holeplanet, #tunnelplanet, #desertplanet, #farmplanet, #cityplanet, #airportplanet, #universeedge, #radiopotato, #hugeplanet {
+    #maze, #planet1, #tinyplanet, #chinaplanet, #otherplanet, #planet2, #spider, #satellite, #spaceship, #holeplanet, #tunnelplanet, #desertplanet, #farmplanet, #cityplanet, #airportplanet, #universeedge, #radiopotato, #hugeplanet, #spiralplanet {
         background-size: contain;
         background-repeat: no-repeat;
         z-index:100;
