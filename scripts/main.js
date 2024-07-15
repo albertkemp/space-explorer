@@ -182,10 +182,10 @@ $close.click(closeMap);
         return distance < (elem1Diameter / 2 + elem2Diameter / 2);
     }
     $mapspiralplanet.css({
-        "left": (planets[15].x/100) + "px",
-        "top": (planets[15].y/100) + "px",
-        "height": (planets[15].diameter/100) + "px",
-        "width": (planets[15].diameter/100) + "px",
+        "left": (planets[18].x/100) + "px",
+        "top": (planets[18].y/100) + "px",
+        "height": (planets[18].diameter/100) + "px",
+        "width": (planets[18].diameter/100) + "px",
     });
     $mapairportplanet.css({
         "left": (planets[14].x/100) + "px",
