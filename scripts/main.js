@@ -128,7 +128,7 @@ $close.click(closeMap);
         {id: "#farmplanet", x: 13000, y: 4000, visible: true, gravity: 0.2, diameter: 1800},
         {id: "#cityplanet", x: 9000, y: 4000, visible: true, gravity: 0.3, diameter: 2500},
         {id: "#airportplanet", x: 1000, y: 5000, visible: true, gravity: 0, diameter: 2500},
-        {id: "#universeedge", x: -2000, y: -2000, visible: true, gravity: 0, diameter: 24000},
+        {id: "#universeedge", x: -2000, y: -2000, visible: true, gravity: 0, diameter: 23600},
         {id: "#radiopotato", x: 100, y: 200, visible: true, gravity: 0, diameter: 50},
     ]; 
     
