@@ -130,7 +130,7 @@ $close.click(closeMap);
         {id: "#airportplanet", x: 1000, y: 5000, visible: true, gravity: 0, diameter: 2500},
         {id: "#universeedge", x: -2000, y: -2000, visible: true, gravity: 0, diameter: 23500},
         {id: "#radiopotato", x: 100, y: 200, visible: true, gravity: 0, diameter: 50},
-        {id: "#hugeplanet", x: 0, y: -5000, visible: true, gravity: 0.4, diameter: 5000},
+        {id: "#hugeplanet", x: 0, y: 0, visible: true, gravity: 0.4, diameter: 5000},
     ]; 
     
     let spinplanets = [
@@ -459,18 +459,6 @@ let angle = Math.atan2(y - nearestPlanet.y, x - nearestPlanet.x);
             y=0;
         } else if (y>=20000){
             y=20000;
-        } else if (x<0&&y<0){
-            x=0;
-            y=0;
-        } else if(x>20000&&y>20000){
-            x=20000;
-            y=20000;
-        } else if (x<0&&y>20000){
-            x=0;
-            y=20000;
-        } else if (x>20000&&y<0){
-            x=20000;
-            y=0;
         }else if(x<-2000 || y<-2000 || x>22000 || y>22000){
             message("CONGRATULATIONS, YOU HAVE ESCAPED THE UNIVERSE!");
         }
