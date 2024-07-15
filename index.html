@@ -56,7 +56,11 @@
         <div id="hugeplanet"></div>
         <div id="spiralplanet"></div>
     </div>
-    <img src="images/reminderdark.jpg" width="200" id="reminder" style="left:60%;position:absolute;">
+    
+    <div  style="left:60%;position:absolute;">
+        <img src="images/reminderdark.jpg" width="200" id="reminder">
+        <button onclick="gotIt()">Got it</button>
+    </div>
     <!--
     <div style="position:relative;right:0;width:40%;left:600px;"><h2>Notes about the game:</h2>
         <p>The planets are all below the starting planet. You can also check on the map (upper right corner).</p>
@@ -77,9 +81,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="scripts/main.js"></script>
         <script>
-            setTimeout(function(){
-                document.getElementById("reminder").style.display="none";
-            }, 15000);
+            function gotIt(){
+                var reminder = document.getElementById("reminder");
+                reminder.style.display="none";
+            }
             
         </script>
     </body>
