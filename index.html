@@ -59,7 +59,7 @@
     
     <div  style="left:60%;position:absolute;">
         <img src="images/reminderdark.jpg" width="200" id="reminder">
-        <button onclick="gotIt()">Got it</button>
+        <button onclick="gotIt()" id="gotit">Got it</button>
     </div>
     <!--
     <div style="position:relative;right:0;width:40%;left:600px;"><h2>Notes about the game:</h2>
@@ -84,6 +84,8 @@
             function gotIt(){
                 var reminder = document.getElementById("reminder");
                 reminder.style.display="none";
+                var gotit = document.getElementById("gotit");
+                gotit.style.display="none";
             }
             
         </script>
