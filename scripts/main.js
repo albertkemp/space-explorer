@@ -131,7 +131,7 @@ $close.click(closeMap);
         {id: "#airportplanet", x: 1000, y: 5000, visible: true, gravity: 0, diameter: 2500},
         {id: "#universeedge", x: -2000, y: -2000, visible: true, gravity: 0, diameter: 23500},
         {id: "#radiopotato", x: 100, y: 200, visible: true, gravity: 0, diameter: 50},
-        {id: "#hugeplanet", x: 0, y: -5000, visible: true, gravity: 0.4, diameter: 5000},
+        {id: "#hugeplanet", x: 0, y: -7000, visible: true, gravity: 0.4, diameter: 5000},
         {id: "#spiralplanet", x: 10000, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
     ]; 
     
