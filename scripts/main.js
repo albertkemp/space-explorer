@@ -136,7 +136,7 @@ $close.click(closeMap);
         {id: "#hugeplanet", x: 0, y: -7000, visible: true, gravity: 0.4, diameter: 5000},
         {id: "#spiralplanet", x: 10000, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#clueplanet", x: 17000, y: 17000, visible: true, gravity: 0.2, diameter: 2000},
-        {id: "#natureplanet", x: 700, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
+        {id: "#natureplanet", x: 7000, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
     ]; 
     
     let spinplanets = [
