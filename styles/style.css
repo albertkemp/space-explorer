@@ -108,6 +108,12 @@ h2{
     width:50px;
     height:50px;
 }
+#guypointing{
+    background-image: url("../images/guypointing.png");
+    height: 200px;
+    width: 50px;
+
+}
 #natureplanet{
     background-image: url("../images/natureplanet.svg");
     height: 2000px;

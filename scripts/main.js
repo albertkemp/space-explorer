@@ -137,6 +137,7 @@ $close.click(closeMap);
         {id: "#spiralplanet", x: 10000, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#clueplanet", x: 17000, y: 17000, visible: true, gravity: 0.2, diameter: 2000},
         {id: "#natureplanet", x: 7000, y: 13700, visible: true, gravity: 0.2, diameter: 2000},
+        {id: "#guypointing", x: 0, y: -200, visible: true, gravity: 0, diameter: 200},
     ]; 
     
     let spinplanets = [
@@ -185,6 +186,7 @@ $close.click(closeMap);
         // Check if the distance is less than the sum of the radii
         return distance < (elem1Diameter / 2 + elem2Diameter / 2);
     }
+    //Next map planet should be planets[22], not planets[21]
     $mapnatureplanet.css({
         "left": (planets[20].x/100) + "px",
         "top": (planets[20].y/100) + "px",
