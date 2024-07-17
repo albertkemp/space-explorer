@@ -170,10 +170,10 @@ h2{
 #planet2{
     /* left:0;
     top:0; */
+    background-image: url("../images/planet2.svg");
     height: 2000px;
     width: 2000px;
-   
-    background-image: url("../images/planet2.svg");
+    
 }
 #tinyplanet{
     /* left:425px;
