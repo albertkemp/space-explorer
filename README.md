@@ -1,7 +1,7 @@
 # Space explorer
 ## about:
 ## 🎉we've reached over 100 commits!💯
-Space explorer is a 2d black and white space exploration game using SVG images to draw planets. There will be multiplayer fuctionality eventually, using Google Sheets as a database, which is in heavy development. Yes, it is only for users with google accounts that will be added to the game, and very small scale with only like 20 users max.
+Space explorer is a 2d black and white space exploration game built with Javascript (jQuery), using SVG images to draw planets. There will be multiplayer fuctionality eventually, using Google Sheets as a database, which is in heavy development. Yes, it is only for users with google accounts that will be added to the game, and very small scale with only like 20 users max.
 
 Visit game at https://albertkemp.github.io/space-explorer
 
