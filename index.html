@@ -62,6 +62,15 @@
         <div id="natureplanet"></div>
         <div id="guypointing"></div>
     </div>
+        <div id="instructions">
+            <h2>Instructions:</h2>
+            <ul>
+                <li>Left and right arrow keys to control direction</li>
+                <li>Up arrow key for thrust</li>
+                <li>Down arrow key for reverse thrust</li>
+                <button onclick="hideInstructions()">OK</button>
+            </ul>
+        </div>
     
     <!--
     <div style="position:relative;right:0;width:40%;left:600px;"><h2>Notes about the game:</h2>
@@ -80,6 +89,12 @@
             spoiler.style.display="block";
         }
     </script>
+        <script>
+            let instructions = document.querySelectorAll("#instructions");
+            function hideInstructions(){
+                instructions.style.display="none";
+            }
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="scripts/main.js"></script>
         
