@@ -63,8 +63,8 @@ h2{
     overflow: hidden;
     position: absolute;
     background-image: url("../images/background.jpeg");
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
 }
 #fuel{
     z-index: 300;
